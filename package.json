@@ -1,0 +1,15 @@
+{
+  "name": "solarized-plus-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Solarized syntax with some extended settings, such as highlighting functions",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/Nedra1998/solarized-plus-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

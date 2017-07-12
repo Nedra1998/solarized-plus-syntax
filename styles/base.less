@@ -1,0 +1,146 @@
+@import "syntax-variables";
+
+.syntax--comment {
+  color: @syntax-comment-color;
+  font-style: italic;
+
+  .syntax--markup.syntax--link {
+    color: @syntax-comment-color;
+  }
+}
+
+.syntax--string {
+  color: @cyan;
+  &.syntax--regexp {
+    color: @red;
+  }
+}
+
+.syntax--constant {
+  &.syntax--numeric {
+    color: @cyan;
+  }
+  &.syntax--language {
+    color: @yellow;
+  }
+  &.syntax--character,
+  &.syntax--other {
+    color: @orange;
+  }
+}
+
+.syntax--variable {
+  color: @blue;
+}
+
+.syntax--keyword {
+  color: @green;
+}
+
+.syntax--keyword {
+  color: @green;
+
+  &.syntax--control {
+    color: @green;
+  }
+
+  &.syntax--operator {
+    color: @green;
+  }
+
+  &.syntax--other.syntax--special-method {
+    color: @tmp;
+  }
+
+  &.syntax--other.syntax--unit {
+    color: @tmp;
+  }
+}
+
+.syntax--storage {
+  color: @green;
+}
+
+.syntax--entity {
+  &.syntax--name {
+    &.syntax--class,
+    &.syntax--type.syntax--class,
+    &.syntax--section,
+    &.syntax--type,
+    &.syntax--function {
+      color: @blue;
+    }
+  }
+  &.syntax--other.syntax--attribute-name {
+    color: @syntax-subtle-color;
+    &.syntax--id{
+      color: @blue;
+    }
+  }
+}
+
+.syntax--support {
+  &.syntax--function {
+    color: @blue;
+
+    &.syntax--any-method {
+      color: @blue;
+    }
+    // &.syntax--builtin {
+    //   color: @green;
+    // }
+  }
+  &.syntax--type,
+  &.syntax--class {
+    color: @green;
+  }
+}
+
+.syntax--meta {
+  &.syntax--class {
+    color: @orange;
+
+    &.syntax--body {
+      color: @green;
+    }
+  }
+
+  &.syntax--method-call,
+  &.syntax--method {
+    color: @blue;
+  }
+
+  &.syntax--definition {
+    &.syntax--variable {
+      color: @red;
+    }
+  }
+}
+
+.syntax--tag {
+  &.syntax--entity.syntax--name {
+    color: @blue;
+  }
+  &.syntax--punctuation.syntax--definition {
+    &.syntax--html,
+    &.syntax--begin,
+    &.syntax--end {
+      color: @syntax-comment-color;
+    }
+  }
+}
+
+.syntax--invalid {
+  &.syntax--deprecated {
+    color: @yellow;
+    text-decoration: underline;
+  }
+  &.syntax--illegal {
+    color: @red;
+    text-decoration: underline;
+  }
+}
+
+.syntax--none {
+  color: @syntax-text-color;
+}
